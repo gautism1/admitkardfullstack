@@ -18,7 +18,10 @@ function search()
        
        {  ans.then((data)=>
          {   
-            setQuery([data.data]);
+            if(data.data[0]) {
+              setQuery([data.data[0]]);  
+            }
+           
 
          }).catch((err)=>
          {
@@ -29,9 +32,8 @@ function search()
      // else {
        //  alert("No matching found")
      // }
-console.log(query);
-      }
-     
+console.log(query[0]);
+      }    
     return(
         <div className="searching">
            <div className="inputbox">
@@ -48,7 +50,7 @@ console.log(query);
                      <ul>     
                     {                      
                        query &&  query.map((data,index)=>
-                       (<p key={index}> {query.toString()}</p>))
+                       (<h3 key={index}> {data.string }</h3>))
                     }
                       </ul>   
                      </div>

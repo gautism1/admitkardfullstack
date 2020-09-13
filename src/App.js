@@ -1,8 +1,6 @@
 import React from 'react';
 import './App.css';
-import Questions from './enterquestion';
-import Search from './search';
-
+ 
 import {
   BrowserRouter as Router,
   Switch,
@@ -10,10 +8,18 @@ import {
   Link
 } from "react-router-dom";
 
+import  { lazy ,Suspense } from 'react';
+
+const  Questions = lazy(() => import('./enterquestion'));
+const   Search = lazy(() => import('./search'));
+ 
+const renderLoader = () => <p>Loading ......Please Wait</p>;
 
 function App() {
+  
   return (      
     <Router>
+    <Suspense fallback={renderLoader()}>
     <div className="App">
      <ul className="smallnav">
           <li >
@@ -27,8 +33,8 @@ function App() {
         <Route  exact path ="/" component={Questions}/>
         <Route  path ="/search" component={Search}/>
         </Switch>
-
     </div>
+    </Suspense>
     </Router>
   );
 }
