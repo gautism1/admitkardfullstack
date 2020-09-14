@@ -1,24 +1,25 @@
  .maindiv{
-   margin-left:10%;
-   margin-top:5%;
+   margin-left:5%;
+  
    width:auto;
    height:400px;
     margin-right:20%;
    
-   background:lightgrey;
- }
- 
+ } 
  ul{
-    text-decoration:none;
+    
     color:black;
  }
+  
  li
  {
    list-style:none;
    display:inline;
    margin-left:10%;
+   padding:3px;
    font-size:20px;
-   color:blue; 
+   color:blue; font-weight:bold;
+   border:4px blue   dashed;
  }
  .divlogo{
    
@@ -31,14 +32,27 @@
 }
 .formdiv{
   background:white;
- margin:5%;
+  text-align:center;
+  margin:5%;
  
   text-align:center;
 }
+a{
+  text-decoration:none;color:blue;
+}
+a:hover{
+  background:blue;
+  color:white;padding:0;
+}
 .input-fields{
-margin-top:3%;
+   margin-top:3%;
+   padding:5px;
+   border:2px solid skyblue;
+   border-radius:5px;
+   text-align:center;
 }
  .inputfield{
+  
    height:30px;
    color:black;
    font-size:20px;
@@ -47,8 +61,10 @@ margin-top:3%;
    margin-left:5%;
    padding:5px;
    outline:none;
-   border:none;
-   border-bottom:1px solid black
+   border:1px solid grey;
+   border-radius:10px;
+   
+    margin-top:5%;
  }
  .buttondiv{
    text-align:center;
@@ -56,17 +72,37 @@ margin-top:3%;
  }
  .submitbutton{
   border:none;
-  height:30px;
+  border-radius:10px;
+  height:40px;
+  width:200px;
   font-size:20px;
   outline:none;
   cursor:pointer;
   background:skyblue;
   color:white;
    }
+   .submitbutton:hover{
+     font-size:25px;
+   }
    .inputbox{
      margin-top:5%;
-    margin-left:10%
+     width:80%; 
+    margin-left:10%;margin:0 auto;
+    border:2px solid skyblue;
    }
    .searching{
      margin:0 auto;
+   }
+   .searchform{
+     margin:0 auto;
+     text-align:center;
+   }
+   .inputsearchfield{
+     margin-left:20%;
+   }
+   .searchbutton{
+     margin:0 auto;
+   }
+   .buttondiv{
+     margin-left:0;
    }

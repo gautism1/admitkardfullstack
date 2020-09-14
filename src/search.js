@@ -1,7 +1,6 @@
 import React ,{useState}from 'react';
 import './App.css';
 import axios from 'axios';
-
  
 function search()
 {
@@ -13,35 +12,30 @@ function search()
          const searchable={
              "name":check
        }       
-       const ans=  axios.post('http://localhost:5000/searching',searchable);
-       
-       
+       const ans=  axios.post('http://localhost:5000/searching',searchable);      
        {  ans.then((data)=>
          {   
             if(data.data[0]) {
               setQuery([data.data[0]]);  
             }
            
-
          }).catch((err)=>
          {
             console.log("something uneven happened",err)
          }); 
            
       }
-     // else {
-       //  alert("No matching found")
-     // }
+   
 console.log(query[0]);
       }    
     return(
         <div className="searching">
            <div className="inputbox">
-             <form onSubmit={onsubmit}>
+             <form onSubmit={onsubmit} className="searcchform inputsearchfield">
                <input type="text"  className="inputfield" placeholder="Enter string to be searched" onChange={(e) =>setCheckString(e.target.value)} required>
                </input>
                   <div className="buttondiv">
-                       <button type="submit" className="submitbutton" name="searchbutton"  > Go for Search</button>
+                       <button type="submit" className="submitbutton searchbutton" name="searchbutton"  > Go for Search</button>
                        </div>
              </form>
              <div>

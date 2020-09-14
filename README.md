@@ -6,17 +6,16 @@ It includes
 
  - Lazy loading of all components
  - Suspense and fallback to show  loading screen till  my components
-   loads
-   
+   loads  
  - Used react-router-dom v5
-
+ - Used Hooks(UseState)
  
 
  - No extra CSS framework, all CSS written natively
  - I have also applied ErrorBoundary to handle  app crash
  - I have used heroku to host front end by using  simple server.js file (nodejs)
 
- **LIVE DEMO LINK**   :   [AdmitKard Frontend  ](https://github.com/gautism1/admitkard) : 
+ **LIVE DEMO LINK**   :   [AdmitKard Frontend  ]() : 
 
 **YOUTUBE VIDEO DEMO LINK** 
 
