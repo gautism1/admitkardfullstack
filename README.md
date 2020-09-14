@@ -9,15 +9,14 @@ It includes
    loads  
  - Used react-router-dom v5
  - Used Hooks(UseState)
- 
+ - MongoDb is used for storage 
+ - 
 
  - No extra CSS framework, all CSS written natively
  - I have also applied ErrorBoundary to handle  app crash
  - I have used heroku to host front end by using  simple server.js file (nodejs)
 
- **LIVE DEMO LINK**   :   [AdmitKard Frontend  ]() : 
-
-**YOUTUBE VIDEO DEMO LINK** 
+ **LIVE DEMO LINK**   :   [AdmitKard Frontend ]() : 
 
 **Installation** 
    
@@ -29,4 +28,3 @@ It includes
 
  - LinkedIN : [click here](https://www.linkedin.com/in/vipingautamj/)
  - Email : vipingautam.m@gmail.com
- 
